@@ -40,6 +40,11 @@ if __name__ == "__main__":
     height = 90
     drag_flag = False
 
+    # File Content
+    file_class = InputFileClass(filename)
+    content = file_class.content
+    content_len = len(content)
+
     # Screen Variables
     screen_width = 640
     screen_height = 600
@@ -67,11 +72,6 @@ if __name__ == "__main__":
     person_y = 200
     prev_x = 0
     prev_y = 0
-
-    # File Content
-    file_class = InputFileClass(filename)
-    content = file_class.content
-    content_len = len(content)
 
     # Initalize PyGame
     pygame.init()

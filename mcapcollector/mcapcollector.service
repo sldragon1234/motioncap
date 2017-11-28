@@ -1,0 +1,12 @@
+#!/bin/bash
+
+[Unit]
+Description=Motion Capture Collector
+
+[Service]
+User=pi
+ExecStart=/home/pi/mcapcollector/mcapcollector.py
+ExecStop=/home/pi/mcapcollector/stop
+
+[Install]
+WantedBy=multi-user.target
